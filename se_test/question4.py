@@ -8,3 +8,4 @@ def max_val_of_consecutive_nums(lst):
 		res.append(consecutive_sum)
 	return max(res)
 
+print max_val_of_consecutive_nums([10, -2, 5, 6, -5])
