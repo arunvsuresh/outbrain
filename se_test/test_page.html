@@ -1,6 +1,11 @@
 
 <!-- saved from url=(0045)http://tam.outbrain.com/tamtest/css_test.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script type="text/javascript" src="./test_page_files/get" charset="UTF-8" async=""></script><title>test page</title>
+<html><head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script type="text/javascript" src="./test_page_files/get" charset="UTF-8" async=""></script><title>test page</title>
+
 
 <!-- <style type="text/css">
   .ob-rec-text:hover {
@@ -8,12 +13,64 @@
     background-color:#ccc;
 }
 </style> -->
-
-<style type="text/css">.ob-tcolor{color:#555} .ob-lcolor{color:rgb(0, 0, 238)} .ob-bgtcolor{background-color:#555} .item-link-container:hover .ob-tcolor{border-color:#555} 
+<style type="text/css">/*.ob-tcolor{color:#555} .ob-lcolor{color:rgb(0, 0, 238)} .ob-bgtcolor{background-color:#555} .item-link-container:hover .ob-tcolor{border-color:#555} */
 
   .ob-dynamic-rec-container:hover {
-  text-decoration:underline;
-    background-color:#ccc;}
+    text-decoration:underline;
+    text-decoration-color: black;
+  }
+
+  .ob-dynamic-rec-container {
+    font-family: 'Lato', sans-serif;
+  }
+
+  .ob-widget-header {
+    padding-top:0px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+  }
+
+  .hline {
+    border-top: 0.3px solid #8c8b8b;
+    margin-right: 23px;
+  }
+
+  .ob-widget-items-container {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /*.ob-image-ratio {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }*/
+
+  .ob-rec-image.ob-show.ob-show {
+    flex-shrink: 0;
+  }
+
+  /*.ob-dynamic-rec-container.ob-recIdx-2.ob-p {
+    margin-right: 5px;
+  }*/
+
+
+  @media (max-width: 800px) {
+    #left-half, #right-half {
+    /*li.ob-dynamic-rec-container.ob-recIdx-3.ob-p */
+          float: none;
+          /*margin: 100px;*/
+          display: block;
+          /*margin-right: none;*/
+          /*display: inline-block;*/
+    }
+    .outbrain-link {
+      text-align: justify;
+    }
+    .hlink {
+      max-width: 400px;
+    }
+}
 
 
 </style></head>
@@ -22,9 +79,9 @@
         <div id="ob_holder" style="display: none;"><iframe id="ob_iframe" src="./test_page_files/obFrame.html" style="display: none; width: 1px; height: 1px;"></iframe><script type="text/javascript" src="./test_page_files/widgetGlobalEvent" charset="UTF-8" async=""></script><script type="text/javascript" src="./test_page_files/widgetGlobalEvent(1)" charset="UTF-8" async=""></script></div><div class="OUTBRAIN" data-src="http://tam.outbrain.com/troy/terra.html" data-widget-id="AR_55" data-ob-template="tam.outbrain.com" data-ob-mark="true" data-browser="chrome" data-os="macintel" data-dynload="" data-idx="0" id="outbrain_widget_0"><div class="ob-widget ob-strip-layout AR_55" data-dynamic-truncate="true">
       <style type="text/css">
       /* dynamic basic css */
-.AR_55.ob-widget .ob-widget-items-container {margin:0;padding:0;}
-.AR_55.ob-widget .ob-widget-items-container .ob-clearfix {display:block;width:100%;float:none;clear:both;height:0px;line-height:0px;font-size:0px;}
-.AR_55.ob-widget .ob-widget-items-container.ob-multi-row {padding-top: 2%;}
+/*.AR_55.ob-widget .ob-widget-items-container {margin:0;padding:0;}*/
+/*.AR_55.ob-widget .ob-widget-items-container .ob-clearfix {display:block;width:100%;float:none;clear:both;height:0px;line-height:0px;font-size:0px;}*/
+/*.AR_55.ob-widget .ob-widget-items-container.ob-multi-row {padding-top: 2%;}*/
 .AR_55.ob-widget .ob-dynamic-rec-container {position:relative;margin:0;padding;0;}
 .AR_55.ob-widget .ob-dynamic-rec-link,
 .AR_55.ob-widget .ob-dynamic-rec-link:hover {text-decoration:none;}
@@ -61,7 +118,7 @@
 .AR_55.ob-widget .ob-rec-image-container .ob-rec-image {display:block;}
       /* dynamic strip css */
 .AR_55.ob-widget .ob-rec-image-container {position:relative;}
-.AR_55.ob-widget .ob-rec-image-container .ob-image-ratio {height:0px;line-height:0px;padding-top:63.0%;}
+.AR_55.ob-widget .ob-rec-image-container .ob-image-ratio {padding-top:63.0%;}
 .AR_55.ob-widget .ob-rec-image-container img.ob-rec-image {width:100%;position:absolute;top:0;bottom:0;left:0;right:0;opacity:0;transition:all 750ms;}
 .AR_55.ob-widget .ob-rec-image-container img.ob-show {opacity:1;}
 .AR_55.ob-widget .ob-rec-image-container .ob-rec-label {position:absolute;bottom:0px;left:0px;padding:0px 3px;background-color:#666;color:white;font-size:10px;line-height:15px;}
@@ -73,7 +130,7 @@
 .AR_55.ob-widget .ob-rec-brandLogo {width:20px;height:20px;}
 .AR_55.ob-widget .ob-rec-brandName {vertical-align:bottom;}
 .AR_55.ob-widget .ob-unit.ob-rec-brandName {vertical-align:super;}
-  .AR_55.ob-widget .ob-widget-items-container {direction: ltr;}
+  /*.AR_55.ob-widget .ob-widget-items-container {direction: ltr;}*/
   .AR_55.ob-widget .ob-dynamic-rec-container {margin-left:0;}
   .AR_55.ob-widget .ob-dynamic-rec-container ~ .ob-dynamic-rec-container {margin:0 0 0 2.3%; }
 .AR_55.ob-widget .ob-widget-header {direction:ltr; font-weight:bold;}
@@ -82,15 +139,11 @@
 .AR_55.ob-widget .ob-rec-source {}
 .AR_55.ob-widget .ob-rec-date {font-weight:bold;}
 
-
-
-
-
       /* dynamic customized css */
       
-.AR_55.ob-strip-layout .ob-widget-header {font-family:inherit;font-size:18px;color:black;padding-bottom:15px;padding-top:0px;}
+/*.AR_55.ob-strip-layout .ob-widget-header {font-family:inherit;font-size:18px;color:black;padding-bottom:15px;padding-top:0px;}*/
 .AR_55.ob-strip-layout .ob-dynamic-rec-container {max-width:400px;}
-.AR_55.ob-strip-layout .ob-rec-text {font-family:inherit;color:black;padding:0px 0 0px;text-align:left;line-height:1.25;font-size:14px;}
+.AR_55.ob-strip-layout .ob-rec-text {font-family:inherit;color:black;padding:10px 0 0px;text-align:left;line-height:1.25;font-size:14px;}
 .AR_55.ob-strip-layout .ob-rec-text:hover {color:black;}
 .AR_55.ob-strip-layout .ob-rec-source {font-family:inherit;color:black;padding:0px 0 0px;text-align:left;font-size:12px;}
 .AR_55.ob-strip-layout .ob-rec-date {font-family:inherit;color:black;padding:0px 0 0px;text-align:left;font-size:12px;}
@@ -104,7 +157,13 @@
     </style>
     <div class="ob-widget-section ob-first">
             <div class="ob-widget-header">Sponsored Headlines</div>
+            <div>
+            <hr class="hline" align="left" width="100%">
+          </div>
             <ul class="ob-widget-items-container">
+              
+
+              <span id="left-half">
         <li class="ob-dynamic-rec-container ob-recIdx-0 ob-p" data-pos="0"><a class="ob-dynamic-rec-link " onclick="" href="https://www.daily-stuff.com/entertainment/35-celebrities-that-support-donald-trump?utm_medium=outbrain&amp;utm_source=120&amp;utm_campaign=201809120728341x0xchrome_0039a81ebbd424e30471d49de62f7e4afa&amp;utm_term=$origpubname$_$origsrcname$_$section_id$&amp;utm_content=%5BGallery%5D+Celebrities+Who+Are+Mega+Trump+Supporters&amp;obOrigUrl=true" onmousedown="this.href=&#39;http://paid.outbrain.com/network/redir?p=_Dqgb_O10FTTAjZbAHarBAfMQG62_yuec1ZIH7u1KMGiBWyAQAW4oiqcTYQDZ-P1LjqVVfEqO2iQCndQU_pFwjoo8lEH6xibQiLE48vKe-k7ibHR2luAHUqCEHRg6Hcltn_b8aeTaR8Ss3R42jjbgZdYA-1u5LxdZpTDGJIlMJDW0QhgMpitc0rIebuo1lJPvWcfId-Mjb0J_ACQK_8UQlv1pDYbxV5yXUvH673Lz9PsX74V2RRgxZiv0QAcOQOyauCKMFXe4XtjSNqd2IFO0OgyGOHpFfEE-hNFr0ZsWUgx6yjgpL-DM09Gfcxh8NDftwEr7WW5nctd1nNcBar8KJvbN2SaLur9iCIQ9ILr78r041svdqqqoD_tQo3HcAJQVaWSx3YmtxZc8vr9WrCMXhadLxl8Dit_l4MHT8TWf_O0w_ue2dW5IAzLv8CqHA7uJpZtYukco6g7IwFrGPBmQKGrrzBXbLoAhCpv4H1L5gNRCJI3BW1rvcl_Eds5yXX38iDnns0dSGeBaCIHX7X8nDTTQVf3rM8dYwZjmy2N_lUYYpeAqNONVHWovAEJlXMfijuUkxbr_LAM9VU_8uNdcL25xN_t8CoxpL5X285uR2Zu5zPLVvliO_dT_EsmF9Kk6Lt2-c0jcHLbY0G1RIMxYNswuY_l532SXDbkdqTGGB1nGboRXGt6vFvLjn87ZGZyEgioiKzO5V9GSf7wsM3MD3-HdKNM1rhEev2oEVXY5_naoh4vI18IrxRvhdnmlLfQXv8rDKHH6tyZZtu4lhbZ4CziAGCcG_257ja7jM0AeOZFQ_vsacvt-Vkc7349mrUNytB8FssR095kQ_lcviL5Fu58JPNSUfJqXpLrk7zmeawvPC_hoUdJTz-oFPrFn7YG9hnciCjuBj-cvCe6zJFffK49SxEPt_UmvWFkIRlBa-p7DY43etfxVD-W4T1y8S8dDdWVCiSTuJg1yJsnekA9XzrPoGTBFBegX08wA5joWY9USix6B6GVIuwR7t_A_ycfUHNbwroGMv4vnkksgoGuIV16OEjpRUckZSjRw8lOvv0&amp;c=b42d548&amp;v=3&#39;;" target="_blank" rel="nofollow">
 
       <span class="ob-unit ob-rec-image-container" data-type="Image">
@@ -127,7 +186,8 @@
       <span class="ob-unit ob-rec-source" data-type="Source">HorizonTimes</span>
 
           </a>
-</li><li class="ob-dynamic-rec-container ob-recIdx-2 ob-p" data-pos="2"><a class="ob-dynamic-rec-link " onclick="" href="http://www.icepop.com/epic-mugshots/?utm_source=ouins&amp;utm_campaign=00b9dfb791ad443d402bb4dd818b8428ff&amp;utm_term=$publisher_name$_$section_name$_$section_id$&amp;utm_content=newnext&amp;utm_medium=Le_OS_IP_US_D_Mugshots_v11_1012&amp;utm_request=$req_id$&amp;obOrigUrl=true" onmousedown="this.href=&#39;http://paid.outbrain.com/network/redir?p=9cCLp9eSEqLxLlNYkXwR_4N7hUECWXhbbePfkNAMRN431E0ziVH_ZC0OGaX-wsYB1MZslNCOkwoPgFiLWJbxHyVESFGZDz1Lr19uEQ18LQf58HpJt4yPDr2srd3n0DCCQo4ZkUAXLGv5M1lRMCFBONjqQRtQ0e7tIDdemXAPXZuiNkFC7hALXWiKm7eHF1IKxTOv-jlR-XE2MPBKhS2Uf2YRiv4cNM6LDq9S-TNHBCniTAYdoKi2m4If_aCDFTOmaW2W1dNdd1B2QdaCuuYBCeOVDTFcr7W-bJHloo6c7WznW7JJTFgnPZsAMeb2Lcfw0uww2AYWPojlGtS8GE7y5ycZDHZ7k9ZjIEqLEQNkB_fdPO9sAobcctzNmbatvkNJIwOyEfeP1_ezRUidZUPXRjF8mwlcb1-zj4OHAkbUiMzZ_2OuHha3_I6vydRYtusNrbmy9tQgnDfLx57_iFrA04FLwHiQISm1Go-0EenLVp9oGn5WAxCkyTmNhbm3AtrCcky6xDP6J1FJlnwiZ-bxs2xzHaQz330mRkmavFWuVLf_UagmVjQ48TTmkNOXCjZpDSQHHwvBwU4ff4gR7kWvX3FmRu_jmNCuh-dyFHTjscGysXn8UoSXQX8WInql2ID06cwNIxFwvIK2qhR2pMRghTZu3Dsz41ZrEiD4SaGyQ5p85rS39sc4-ySMQyIT-37B0-GlF8aZCEKPDNwfrP52gu2B5ffgJu-HZ5OddHu50pawr-TJnvshslMQG1v06HWDDOQEl42RkRC0Qf0eMK2sznePc91L3Tc0RTaSVfXMjYiqcWSG5sW6xfG5r29x7SWLkZPIbGhFqoQV0LAHauqVHUzdvkWedJLujtkCsX6heb6lbHIVmyWSHUcwVvh1hQc5y8kP_tJUWtQH92AtUiYpOI4O9OPwrm60Pudnsv6T_Ukdixv5KrdJbFEbjMGfmgikR8HkexQim3_A4FGCPosH18IXqh8hbZLNx7bZ7j4ewHHNAf1G52WFQjMHIlOkWJE9U_0dHxojHYxdWqOt0d3x4ZBfveZl3hP9TmigF0JAHgo&amp;c=e86dde4b&amp;v=3&#39;;" target="_blank" rel="nofollow">
+</li></span>
+<span id="right-half"><li class="ob-dynamic-rec-container ob-recIdx-2 ob-p" data-pos="2"><a class="ob-dynamic-rec-link " onclick="" href="http://www.icepop.com/epic-mugshots/?utm_source=ouins&amp;utm_campaign=00b9dfb791ad443d402bb4dd818b8428ff&amp;utm_term=$publisher_name$_$section_name$_$section_id$&amp;utm_content=newnext&amp;utm_medium=Le_OS_IP_US_D_Mugshots_v11_1012&amp;utm_request=$req_id$&amp;obOrigUrl=true" onmousedown="this.href=&#39;http://paid.outbrain.com/network/redir?p=9cCLp9eSEqLxLlNYkXwR_4N7hUECWXhbbePfkNAMRN431E0ziVH_ZC0OGaX-wsYB1MZslNCOkwoPgFiLWJbxHyVESFGZDz1Lr19uEQ18LQf58HpJt4yPDr2srd3n0DCCQo4ZkUAXLGv5M1lRMCFBONjqQRtQ0e7tIDdemXAPXZuiNkFC7hALXWiKm7eHF1IKxTOv-jlR-XE2MPBKhS2Uf2YRiv4cNM6LDq9S-TNHBCniTAYdoKi2m4If_aCDFTOmaW2W1dNdd1B2QdaCuuYBCeOVDTFcr7W-bJHloo6c7WznW7JJTFgnPZsAMeb2Lcfw0uww2AYWPojlGtS8GE7y5ycZDHZ7k9ZjIEqLEQNkB_fdPO9sAobcctzNmbatvkNJIwOyEfeP1_ezRUidZUPXRjF8mwlcb1-zj4OHAkbUiMzZ_2OuHha3_I6vydRYtusNrbmy9tQgnDfLx57_iFrA04FLwHiQISm1Go-0EenLVp9oGn5WAxCkyTmNhbm3AtrCcky6xDP6J1FJlnwiZ-bxs2xzHaQz330mRkmavFWuVLf_UagmVjQ48TTmkNOXCjZpDSQHHwvBwU4ff4gR7kWvX3FmRu_jmNCuh-dyFHTjscGysXn8UoSXQX8WInql2ID06cwNIxFwvIK2qhR2pMRghTZu3Dsz41ZrEiD4SaGyQ5p85rS39sc4-ySMQyIT-37B0-GlF8aZCEKPDNwfrP52gu2B5ffgJu-HZ5OddHu50pawr-TJnvshslMQG1v06HWDDOQEl42RkRC0Qf0eMK2sznePc91L3Tc0RTaSVfXMjYiqcWSG5sW6xfG5r29x7SWLkZPIbGhFqoQV0LAHauqVHUzdvkWedJLujtkCsX6heb6lbHIVmyWSHUcwVvh1hQc5y8kP_tJUWtQH92AtUiYpOI4O9OPwrm60Pudnsv6T_Ukdixv5KrdJbFEbjMGfmgikR8HkexQim3_A4FGCPosH18IXqh8hbZLNx7bZ7j4ewHHNAf1G52WFQjMHIlOkWJE9U_0dHxojHYxdWqOt0d3x4ZBfveZl3hP9TmigF0JAHgo&amp;c=e86dde4b&amp;v=3&#39;;" target="_blank" rel="nofollow">
 
       <span class="ob-unit ob-rec-image-container" data-type="Image">
   <div class="ob-image-ratio"></div>
@@ -149,11 +209,11 @@
       <span class="ob-unit ob-rec-source" data-type="Source">DailySportX</span>
 
           </a>
-</li>      </ul>
+</li> <div class="ob_what">
+      <a href="http://www.outbrain.com/what-is/default/en" rel="nofollow" onclick="OBR.extern.callWhatIs(&#39;http://www.outbrain.com/what-is/default/en&#39;,&#39;&#39;,-1,-1,true ,null);return false" class="outbrain-link">Recommended by<span class="ob_logo" title="Outbrain - content marketing"></span></a>
+  </div></span>     </ul>
     </div>
-                    <div class="ob_what">
-			<a href="http://www.outbrain.com/what-is/default/en" rel="nofollow" onclick="OBR.extern.callWhatIs(&#39;http://www.outbrain.com/what-is/default/en&#39;,&#39;&#39;,-1,-1,true ,null);return false">Recommended by<span class="ob_logo" title="Outbrain - content marketing"></span></a>
-	</div>
+                    
     <div class="ob-pixels">
         </div>  </div></div>
         <script type="text/javascript" async="async" src="./test_page_files/outbrain.js"></script> 
